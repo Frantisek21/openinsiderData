@@ -1,14 +1,14 @@
 # Basic Settings
 output:
-  directory: "data"
-  filename: "insider_trades.csv"
+  directory: "/Users/frantiseksuran/Documents/Projects/openinsider/outcomes"  # Output directory for scraped data
+  filename: "insider_trades_try1.csv"
   format: "csv"  # Possible values: csv, parquet
 
 # Scraping Settings
 scraping:
-  start_year: 2025  # From which year should data be retrieved
-  start_month: 1    # From which month in start_year
-  max_workers: 10   # Number of parallel downloads
+  start_year: 2024  # From which year should data be retrieved
+  start_month: 1  # From which month in start_year
+  max_workers: 3   # Number of parallel downloads
   retry_attempts: 3 # Number of retry attempts on errors
   timeout: 30       # Timeout in seconds for HTTP requests
 
